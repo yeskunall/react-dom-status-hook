@@ -1,0 +1,56 @@
+{
+  "name": "@yeskunall/react-dom-status-hook",
+  "version": "0.0.1",
+  "description": "React hook for subscribing to document.readyState",
+  "main": "index.js",
+  "scripts": {
+    "example": "parcel ./example/index.html",
+    "test": "ava"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yeskunall/react-dom-status-hook.git"
+  },
+  "keywords": [
+    "dom",
+    "hooks",
+    "react"
+  ],
+  "author": "Kunall Banerjee <yeskunall96@gmail.com> (https://kimchi.now.sh/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yeskunall/react-dom-status-hook/issues"
+  },
+  "homepage": "https://github.com/yeskunall/react-dom-status-hook#readme",
+  "dependencies": {
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0",
+    "react-test-renderer": "^16.7.0-alpha.0"
+  },
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "browser-env": "^3.2.5",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "0.0.0",
+    "husky": "^1.1.2",
+    "lint-staged": "^7.3.0",
+    "parcel": "^1.10.3",
+    "prettier": "^1.14.3",
+    "raf": "^3.4.0"
+  },
+  "lint-staged": {
+    "*.{js,jsx,css,yml}": [
+      "prettier --write --config .prettierrc",
+      "git add"
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  }
+}
